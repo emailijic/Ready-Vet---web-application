@@ -10,7 +10,7 @@ const nodemailer = require("nodemailer");
 @Injectable()
 export class EmailService {
   async sendEmail (options: IEmailOptions): Promise<{success: boolean}> {
-    const fromEmail = 'emailijic@gmail.com';
+    const fromEmail = 'ema@gmail.com';
 
     const mailOptions = {
       from: `${fromEmail}`,
@@ -23,7 +23,6 @@ export class EmailService {
       service: 'gmail',
       auth: {
         user: fromEmail,
-        pass: 'mixakrematepih2707'
       }
     });
 
